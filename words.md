@@ -1,6 +1,6 @@
 ---
 layout: category_index
-title: words
+title: Words
 permalink: /words/
 category_name: words
 ---
