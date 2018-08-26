@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Learning the basic of web development through making a GitHub Pages.
+Learning the basics of web development through making a GitHub Pages website.
 
 
