@@ -34,7 +34,7 @@ theme_color: white
 markdown: kramdown
 
 #theme: minima
-remote_theme: broccolini/swiss
+remote_theme: danieltemesgen/swiss
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
