@@ -23,8 +23,10 @@ github_username: danieltemesgen
 
 # Optional social link, you can choose from the following options:
 # twitter (default), instagram, medium, or dribbble
-social_link: twitter
-social_username: jekyllrb
+
+social_link: linkedin
+social_username: dtemesgen
+social_email: Daniel.Temesgen@gmail.com
 
 # Set theme color here
 # Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
