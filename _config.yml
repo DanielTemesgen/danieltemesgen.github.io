@@ -40,7 +40,7 @@ theme_color: white
 markdown: kramdown
 
 #theme: minima
-remote_theme: danieltemesgen/swiss
+remote_theme: danieltemesgen/swiss #this is a fork of the broccolini swiss repo, with some customisation.
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
