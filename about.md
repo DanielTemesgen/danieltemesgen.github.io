@@ -14,8 +14,8 @@ See my [github](https://github.com/danieltemesgen) for more info.
 *  Favourite open-source projects
     *  [Jekyll](https://jekyllrb.com/) 
         *  A static-site generator which creates websites from plain text.
-        *  This website is writen with Jekyll.
+        *  This website is written with Jekyll.
     *  [Holoviews](http://holoviews.org/)
         *  Data visualisation library in Python, focused on outputting plots with minimal lines of code and support for multiple backends.
     * [p5.js](https://p5js.org/)
-        * Javascript client-side library for visual art, orginally based on the core principles of Processing.
+        * JavaScript client-side library for visual art, originally based on the core principles of Processing. 
