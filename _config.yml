@@ -18,17 +18,17 @@ title: Daniel Temesgen
 description: A data analyst interested in design, web development and programming for the visual arts.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: danieltemesgen.io # the GitHub repo name for your project
+github_repo: danieltemesgen.github.io # the GitHub repo name for your project
 github_username: danieltemesgen
 
 # Optional social link, you can choose from the following options:
 # twitter (default), instagram, medium, or dribbble
 
 social_link: linkedin
-social_username: dtemesgen
+linkedin_username: dtemesgen
 
 social_link: goodreads
-social_username: danieltemesgen
+goodreads_username: danieltemesgen
 
 social_email: Daniel.Temesgen@gmail.com
 
