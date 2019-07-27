@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Python Utils Module"
+date:   2019-07-27 11:16:00 +0100
+category: words
+---
+Often when writing code it makes sense to abstract some functionality into a helper function. This is usually stored at the top of your file and saves having to write code multiple times.
+
+Further still, if this functionality can be made use of by multiple files then abstracting it into a module can also be useful.
+
+We can then import this module like any package with the usual syntax.
+
+
+``` python
+import py_utils
+```
+[utils-repo]: https://github.com/DanielTemesgen/py-utils
+[binder]: https://mybinder.org/v2/gh/DanielTemesgen/py-utils/master?filepath=https%3A%2F%2Fgithub.com%2FDanielTemesgen%2Fpy-utils%2Fblob%2Fmaster%2Fpy_utils_guide.ipynb
+
+I've written out some functions I find helpful and pushed them to a repo you can find [here][utils-repo]. <br>
+
+It features helpful code on model saving and loading, as well as sensitivity tests.
+
+Rather than writing a guide here, I've included a notebook file in the repo which explains the functions and runs through some examples.
+
+You can run this code yourself using myBinder, a tool which turns notebooks into remote executable environments. 
+<p> Click the link below to get started. <p>
+
+[Binder](binder)
