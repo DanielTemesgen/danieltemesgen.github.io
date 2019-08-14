@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python workshops"
+title:  "Scikit-Learn Pipelines"
 date:   2019-08-14 21:16:00 +0100
 category: words
 ---

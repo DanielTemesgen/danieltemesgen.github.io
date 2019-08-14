@@ -4,10 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 
-Here's a list of things I've worked on:
-
-#### [Python Workshops](https://github.com/DanielTemesgen/python-workshops)
-A repo for python workshops I have given. Blog post [here](https://danieltemesgen.github.io/words/2019/08/14/python-workshops.html).
+#### [Scikit-Learn Pipelines](https://github.com/DanielTemesgen/python-workshops)
+A repo for python workshops I have given. Blog post for the first workshop on Scikit-Learn pipelines [here](https://danieltemesgen.github.io/words/2019/08/14/scikit-learn-pipelines.html).
 
 #### [Py Utils](https://github.com/DanielTemesgen/py-utils)
 Some simple utils I've developed for ml projects. I'll be adding to this over time. Blog post [here](https://danieltemesgen.github.io/words/2019/07/27/ml-utils.html).
