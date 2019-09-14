@@ -14,3 +14,4 @@ It introduces the `sklearn.Pipeline` class, how to instantiate a pipeline, how t
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?filepath=%2FPipelines.ipynb)
 
 ![code-preview](/../assets/images/scikit-learn-pipelines-code-preview.png)
+
