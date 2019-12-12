@@ -5,12 +5,21 @@ date:   2019-12-10 21:16:00 +0100
 category: words
 ---
 
-I've added to the python workshops repo with a guide on Python Decorators, the advantages of Dataclasses, and the benefits of using an IDE [Here](https://github.com/DanielTemesgen/python-workshops).
+[repo-link]: https://github.com/DanielTemesgen/python-workshops
+
+[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?filepath=%2FDecorators_Dataclasses_IDEs%2FDecorators_Dataclasses_IDEs.ipynb
+
+[slides-link]: https://danieltemesgen.github.io/python-workshops/Decorators_Dataclasses_IDEs/#/
+
+I've added to the python workshops repo with a guide on Python Decorators, the advantages of Dataclasses, and the benefits of using an IDE [Here][repo-link].
 
 It explains the benefits of python decorators for centralising complexity, as well as running through some examples on potential uses such as Timing and Logging.
 
-Click below to see the code in an executable environment.
+To have a look at the slides click [here][slides-link].
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?filepath=%2FDecorators_Dataclasses_IDE.ipynb)
+To see the code in an executable environment click below.
+
+[![Binder](https://mybinder.org/badge_logo.svg)][binder-link]
+
 
 ![code-preview](/../assets/images/decorators-dataclasses-IDEs-preview.png)
