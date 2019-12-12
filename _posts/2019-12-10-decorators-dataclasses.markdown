@@ -21,5 +21,6 @@ To see the code in an executable environment click below.
 
 [![Binder](https://mybinder.org/badge_logo.svg)][binder-link]
 
+One last thing, I've been toying with the new Github Actions functionality, which brings long-awaited CI/CD to Github. Now whenever I make a change to the python-workshops repo, CI/CD will convert my notebook to a set of slides and host it on Github pages. I'll make a short post explaining it soon.
 
 ![code-preview](/../assets/images/decorators-dataclasses-IDEs-preview.png)
