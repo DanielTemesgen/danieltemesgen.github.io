@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-#### [Scikit-Learn Pipelines](https://github.com/DanielTemesgen/python-workshops)
+#### [Python Workshops](https://github.com/DanielTemesgen/python-workshops)
 A repo for python workshops I have given. Blog post for the first workshop on Scikit-Learn pipelines [here](https://danieltemesgen.github.io/words/2019/08/14/scikit-learn-pipelines.html).
 
 #### [Py Utils](https://github.com/DanielTemesgen/py-utils)
