@@ -19,7 +19,7 @@ To have a look at the slides, click below.
 
 [![Slides](https://img.shields.io/badge/Launch-Slides-brightgreen)][slides-link]
 
-To see the code in an executable environment click below.
+To see the code in an executable environment, click below.
 
 [![Binder](https://mybinder.org/badge_logo.svg)][binder-link]
 
