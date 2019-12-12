@@ -15,7 +15,9 @@ I've added to the python workshops repo with a guide on Python Decorators, the a
 
 It explains the benefits of python decorators for centralising complexity, as well as running through some examples on potential uses such as Timing and Logging.
 
-To have a look at the slides click [here][slides-link].
+To have a look at the slides, click below.
+
+[![Slides](https://img.shields.io/badge/Launch-Slides-brightgreen)][slides-link]
 
 To see the code in an executable environment click below.
 
