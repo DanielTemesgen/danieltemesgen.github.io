@@ -27,6 +27,42 @@ Now let's breakdown the action for the workshop repo I mentioned.
 
 The below code block is the github action which runs on the repo. It's saved as main.yml in the hidden .github directory which exists in every GitHub repository. 
 
-*** Copy paste main file***
+
+```
+
+name: Build Slides
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout master branch
+      uses: actions/checkout@master
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        cd Decorators_Dataclasses_IDEs/
+        jupyter nbconvert Decorators_Dataclasses_IDEs.ipynb --to slides --SlidesExporter.reveal_scroll=True
+        mv Decorators_Dataclasses_IDEs.slides.html index.html -f
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git status
+        git commit -m "Add changes" -a || echo "No changes to commit"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+
+```
 
 Let's go through this, line by line. 
