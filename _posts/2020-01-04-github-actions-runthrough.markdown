@@ -25,46 +25,16 @@ Finally, a user can also use actions that others have developed. For instance, l
 
 Now let's breakdown the action for the workshop repo I mentioned. 
 
-The below code block is the github action which runs on the repo. It's saved as main.yml in the hidden .github directory which exists in every GitHub repository. 
-
-
-```
-
-name: Build Slides
-
-on: [push]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout master branch
-      uses: actions/checkout@master
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.7
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-        cd Decorators_Dataclasses_IDEs/
-        jupyter nbconvert Decorators_Dataclasses_IDEs.ipynb --to slides --SlidesExporter.reveal_scroll=True
-        mv Decorators_Dataclasses_IDEs.slides.html index.html -f
-    - name: Commit files
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git status
-        git commit -m "Add changes" -a || echo "No changes to commit"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-
-```
+The below code block is the github action which runs on the repo. It's saved as main.yml in the hidden .github directory which exists in every GitHub repository.
 
 {% gist 679c13887fa3be696b1e197f8e9201cd %}
 
 Let's go through this, line by line. 
+
+Firstly, we'll give our GitHub Action a name: Build Slides.
+
+Next, we specify when we want this action to run, in this instance I'd like it to run on every push to this repository. 
+
+The following option tells GitHub what operating system our remote server should be running, this isn't too important in our case, but let's say you were using this Action to do test a piece of software to ensure it performs correctly. 
+You may want to ensure it works on Linux, MacOS and Windows systems.
+
