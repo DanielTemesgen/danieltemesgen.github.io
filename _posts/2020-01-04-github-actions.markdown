@@ -15,7 +15,7 @@ So what may we use this tool for? Commonly users may want to set up unit tests t
 
 A rather simpler example we'll cover in this post involves the repository I use to post python workshops I give from time to time. 
 
-# Example
+# Example Action
 
 All I'd like to do is, on every push, convert the `.ipynb` notebook file to a set of jupytext `.html` slides. The advantage of these slides being in an HTML format is that I can also use GitHub Pages to host these for free!
 
