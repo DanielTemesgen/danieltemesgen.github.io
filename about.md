@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm Daniel Temesgen, a data analyst and recent Chemistry graduate. Interested in Data visualisation, creative coding and deploying apps to the cloud.
+I'm Daniel Temesgen, a data analyst and Conputer Science MSc student. Interested in Data visualisation, creative coding and deploying apps to the cloud.
 See my [github](https://github.com/danieltemesgen) for more info.
 
 ### Technical Details
