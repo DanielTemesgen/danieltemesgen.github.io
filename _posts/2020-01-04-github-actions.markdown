@@ -64,10 +64,10 @@ Every step starts with a `Name`, which is what's shown to us whilst this runs, s
 
 Next, there's the optional `uses` step.
 If you're using an Action developed by someone else then this is where you'd state what it is.
-There can also be an optional `with` steps where you'd state the arguments for this action. We'll get into an example later.
+There can also be an optional `with` step where you'd state the arguments for this action. We'll get into an example later.
 
 Alternatively, other steps may require the `run` step instead.
-This is where you'd put the actual commands you want the server to run, think of this as the commands that will run through a remote terminal, in this case on a Linux machine.
+This is where you'd put the actual commands you want the server to run, think of this as the commands that will run on a remote terminal, in this case on a Linux machine.
 
 ### Checkout master branch
 
@@ -113,7 +113,7 @@ Now we have Python, I'll explain the lines which occur in the `run` step:
 
 So now we made the changes to the filesystem, let's commit those changes.
 This is what the `Commit files` step does.
-It adds the an email and user to the config file, then commits the changes.
+It adds an email and user to the config file, then commits the changes.
 
 If this commit results in no changes, then `"No changes to commit"` is printed to the console.
 
@@ -129,7 +129,7 @@ If this commit results in no changes, then `"No changes to commit"` is printed t
 ### Push changes
 
 Finally, the last steps pushes these changes back to the repository.
-This requires a secret token to prove the authenticity of the user who attempting the `push`.
+This requires a secret token to prove the authenticity of the user who attempting the `push`, we state that in the `with` step.
 
 ```
    - name: Push changes
@@ -138,7 +138,7 @@ This requires a secret token to prove the authenticity of the user who attemptin
         github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-So now we've runthrough the code let's look at how this works.
+So now we've ran through the code let's look at how this works.
 
 ## User Interface
 
@@ -149,5 +149,5 @@ Here's how it looks on the repo, each step runs sequentially, and it's named acc
 
 And that's it!
 
-We've now runthrough an example of a small GitHub Action which works.
-But we've only scratched the surface, for more examples of what's possible visit the [GitHub Actions page](https://github.com/features/actions).
+We've now gone through an example of a small GitHub Action which works.
+But we've only scratched the surface! For more examples of what's possible visit the [GitHub Actions page](https://github.com/features/actions).
