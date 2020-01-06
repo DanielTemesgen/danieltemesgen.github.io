@@ -17,9 +17,9 @@ A rather simpler example we'll cover in this post involves the repository I use 
 
 # Example Action
 
-All I'd like to do is, on every push, convert the `.ipynb` notebook file to a set of jupytext `.html` slides. The advantage of these slides being in an HTML format is that I can also use GitHub Pages to host these for free!
+All I'd like to do is, on every `push`, convert the `.ipynb` notebook file to a set of jupytext `.html` slides. The advantage of these slides being in an HTML format is that I can also use GitHub Pages to host these for free!
 
-So before we get into the details of how we do this, let's quickly go over the format of this solution. Ultimately, a  `.yml` file will run which controls the commands which the CI server executes. 
+So before we get into the details of how we do this, let's quickly go over the format of this solution. Ultimately, a  `.yml` file will run which controls the commands that the CI server executes. 
 
 The `.yml` file will contain bash-like commands that will run sequentially. 
 
@@ -27,7 +27,7 @@ Finally, a user can also use actions that others have developed. For instance, l
 
 Now let's breakdown the action for the workshop repo I mentioned. 
 
-The below code block is the GitHub Action which runs on the repo. It's saved as `main.yml` in the hidden .github directory which exists in every GitHub repository.
+The below code block is the GitHub Action which runs on the repo. It's saved as `main.yml` in the hidden `.github` directory which exists in every GitHub repository.
 
 {% gist 679c13887fa3be696b1e197f8e9201cd %}
 
@@ -43,7 +43,7 @@ Firstly, we'll give our GitHub Action a name: Build Slides.
 name: Build Slides
 ```
 
-Next, we specify when we want this action to run, in this instance I'd like it to run on every push to this repository. 
+Next, we specify when we want this action to run, in this instance I'd like it to run on every `push` to this repository. 
 
 ```
 on: [push]
@@ -60,7 +60,7 @@ jobs:
 ```
 
 Now we've defined the basic setup, the following steps will run on this server.
-Every step starts with a `Name`, which is what's shown to us whilst this runs, so it helps to be a bit descriptive.
+Every step starts with a `name`, which is what's shown to us whilst this runs, so it helps to be a bit descriptive.
 
 Next, there's the optional `uses` step.
 If you're using an Action developed by someone else then this is where you'd state what it is.
@@ -94,8 +94,7 @@ Now we'll setup a Python environment using the `setup-python` Action.
 Now we have Python, I'll explain the lines which occur in the `run` step:
 * Let's use pip to install a virtual environment using the `requirements.txt` file in the repo.
 * Then we'll go into the `Decorators_Dataclasses_IDEs` folder, which is the place with the notebook file we wish to convert.
-* Then we use the `jupyter nbconvert` commmand to convert the notebook to `.html` slides.
-* This converts `Decorators_Dataclasses_IDEs.ipynb` to `Decorators_Dataclasses_IDEs.html`
+* Then we use the `jupyter nbconvert` command to convert the notebook to `.html` slides. This converts `Decorators_Dataclasses_IDEs.ipynb` to `Decorators_Dataclasses_IDEs.html`
 * In order to have these `.html` slides picked up by Github Pages it needs to be called `index.html`
 * So the last line changes the name to `index.html` using the `mv` option, the `-f` overwrites any existing `index.html` which may exist.
 
