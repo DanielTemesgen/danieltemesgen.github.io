@@ -86,6 +86,9 @@ Now we have Python, I'll explain the lines which occur in the `run` step:
 * Let's use pip to install a virtual environment using the requirements.txt file in the repo.
 * Then we'll go into the Decorators_Dataclasses_IDEs folder, which is the place with the notebook file we wish to convert.
 * Then we use the `jupyter nbconvert` commman to convert the notebook to .html slides.
+* This converts `Decorators_Dataclasses_IDEs.ipynb` to `Decorators_Dataclasses_IDEs.html`
+* In order to have these `.html` slides picked up by Github Pages it needs to be called `index.html`
+* So the last line changes the name to `index.html` using the `mv` option, the `-f` overwrite any existing `index.html` which may exist.
 
 
 ```
@@ -96,3 +99,33 @@ Now we have Python, I'll explain the lines which occur in the `run` step:
         jupyter nbconvert Decorators_Dataclasses_IDEs.ipynb --to slides --SlidesExporter.reveal_scroll=True
         mv Decorators_Dataclasses_IDEs.slides.html index.html -f
 ```
+
+So now we made the changes to the filesystem, let's commit those changes.
+This is what the `Commit files` step does.
+It adds the an email and user to the config file, then commits the changes.
+
+If this commit results in no changes, then `"No changes to commit"` is printed to the console.
+
+```
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git status
+        git commit -m "Add changes" -a || echo "No changes to commit"
+```
+
+Finally, the last steps pushes these changes back to the repository.
+This requires a secret token to prove the authenticity of the user who attempting the `push`.
+
+```
+   - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+```
+
+And that's it!
+
+We've now runthrough an example of a small GitHub Action which works.
+But we've only scratched the surface, for more examples of what's possible visit the [GitHub Actions page.](https://github.com/features/actions).
