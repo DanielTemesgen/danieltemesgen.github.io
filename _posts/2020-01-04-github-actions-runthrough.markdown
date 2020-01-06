@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GitHub Actions runthrough"
+title:  "GitHub Actions"
 date:   2020-01-04 14:20:00 +0100
 category: words
 ---
