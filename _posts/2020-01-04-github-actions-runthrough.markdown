@@ -5,7 +5,7 @@ date:   2020-01-04 14:20:00 +0100
 category: words
 ---
 
-Note: this post assume some prior basic knowledge of git, such as the definition of terms like: commit and push. 
+Note: this post assume some prior basic knowledge of git, such as the definition of terms like `commit` and `push`. 
 
 A few months ago, Github finally announced native CI/CD, a key feature that they were lacking compared with competitors such as GitLab. For the purposes of this post think of Continuous Delivery as a remote server that can execute commands to your git repository based upon arbitrary actions. 
 
