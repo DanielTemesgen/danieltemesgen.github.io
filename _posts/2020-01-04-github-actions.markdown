@@ -144,10 +144,10 @@ So now we've runthrough the code let's look at how this works.
 
 Here's how it looks on the repo, each step runs sequentially, and it's named according to the `name` we specified, we can expand further if we want to see the details of any particular step in the case of error.
 
-![code-preview](/../assets/images/github-actions-runthrough-gui.png)
+![code-preview](/../assets/images/github-actions-gui.png)
 
 
 And that's it!
 
 We've now runthrough an example of a small GitHub Action which works.
-But we've only scratched the surface, for more examples of what's possible visit the [GitHub Actions page.](https://github.com/features/actions).
+But we've only scratched the surface, for more examples of what's possible visit the [GitHub Actions page](https://github.com/features/actions).
