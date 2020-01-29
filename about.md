@@ -10,7 +10,7 @@ See my [github](https://github.com/danieltemesgen) for more info.
 ### Technical Details
 *  Running: macOS High Sierra
 *  Programming languages: Primarily Python and SQL. Recently, more javascript.
-*  Current setup: [Pycharm](https://www.jetbrains.com/pycharm/) for most projects, with [Brackets](http://brackets.io/) used for web-based things.
+*  Current setup: [PyCharm](https://www.jetbrains.com/pycharm/) for most projects, with [Brackets](http://brackets.io/) used for web-based things.
 *  Favourite open-source projects
     *  [Jekyll](https://jekyllrb.com/) 
         *  A static-site generator which creates websites from plain text.
