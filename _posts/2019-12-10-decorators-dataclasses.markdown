@@ -7,7 +7,7 @@ category: words
 
 [repo-link]: https://github.com/DanielTemesgen/python-workshops
 
-[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?filepath=%2FDecorators_Dataclasses_IDEs%2FDecorators_Dataclasses_IDEs.ipynb
+[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/Decorators_Dataclasses_IDEs/Decorators_Dataclasses_IDEs.ipynb
 
 [slides-link]: https://danieltemesgen.github.io/python-workshops/Decorators_Dataclasses_IDEs/#/
 
