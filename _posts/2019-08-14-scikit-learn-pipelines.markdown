@@ -7,7 +7,7 @@ category: words
 
 [repo-link]: https://github.com/DanielTemesgen/python-workshops
 
-[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?filepath=%2FPipelines%2FPipelines.ipynb
+[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/Pipelines/Pipelines.ipynb
 
 Here's a repo which explains the basics of scikit-learn pipelines and why they can both save time and prevent data leakage.
 
