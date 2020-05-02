@@ -14,11 +14,11 @@ category: words
 I've added to the python workshops repo with a guide on the basics of Geospatial Analytics.
 
 We'll be going through:
-* Data Gathering and manipulation with `geopandas`
+* Data gathering and manipulation with `geopandas`
 * Interactive visualisation with `hvplot`
 * Rapid nearest neighbour calculation with `kdtrees`
 * Calculating voronoi regions with `scipy.spatial`
-* Spatial Joins
+* Spatial joins
 
 To do this we'll be exploring TFL station data and generating 1000 random points in London to work with.
 
