@@ -29,6 +29,8 @@ To see and run the code in an executable environment, click below.
 
 [![Binder](https://mybinder.org/badge_logo.svg)][binder-link]
 
+To quickly view the code in read-only mode, click [here](https://nbviewer.jupyter.org/github/DanielTemesgen/python-workshops/blob/c5d52515cd3f0acaf169a894994b46b46b43e518/Geospatial/Geospatial_Basics.ipynb).
+
 ![code-preview](/../assets/images/geospatial-basics-preview.png)
 
 P.S On a technical note, I’ve switched from using Jupyter Notebook to JupyterLab for these workshops, the dark theme is a lot easier on the eyes!
