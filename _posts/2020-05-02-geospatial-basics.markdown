@@ -9,6 +9,8 @@ category: words
 
 [binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/Geospatial/Geospatial_Basics.ipynb
 
+![plot-preview](/../assets/images/geospatial-basics-plot-example.png)
+
 I've added to the python workshops repo with a guide on the basics of Geospatial Analytics.
 
 We'll be going through:
