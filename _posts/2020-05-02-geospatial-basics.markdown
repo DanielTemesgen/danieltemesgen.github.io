@@ -30,3 +30,7 @@ To see and run the code in an executable environment, click below.
 [![Binder](https://mybinder.org/badge_logo.svg)][binder-link]
 
 ![code-preview](/../assets/images/geospatial-basics-preview.png)
+
+P.S On a technical note, I’ve switched from using Jupyter Notebook to JupyterLab for these workshops, the dark theme is a lot easier on the eyes!
+
+P.P.S Got something you’d like me to write a post about? Feel free to raise a GitHub issue on the python-workshops repo and I’ll see what I can do.
