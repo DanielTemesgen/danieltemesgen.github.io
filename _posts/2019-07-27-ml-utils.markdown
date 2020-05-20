@@ -29,4 +29,4 @@ Rather than writing a guide here, I've included a notebook file in the repo whic
 You can run this code yourself using myBinder, a tool which turns notebooks into remote executable environments. 
 Click the link below to get started.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](binder-link)
+[![Binder](https://mybinder.org/badge_logo.svg)][binder-link]
