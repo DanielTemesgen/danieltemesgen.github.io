@@ -22,5 +22,3 @@ To see and run the code in an executable environment, click below.
 [![Binder](https://mybinder.org/badge_logo.svg)][binder-link]
 
 To quickly view the code in read-only mode, click [here](https://nbviewer.jupyter.org/github/DanielTemesgen/python-workshops/blob/master/Visualisation/Sankey_Diagram.ipynb).
-
-![code-preview](/../assets/images/sankey-diagram-preview.png)
