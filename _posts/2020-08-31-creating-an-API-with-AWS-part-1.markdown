@@ -25,3 +25,10 @@ You'd rather democratise this process so any one of your colleagues can run it w
 ## Proposed Solution
 You want to turn this process into an API, so anyone with internet access can pass an array of exam scores into a URL and be presented with a json with the statistical description. You've heard a bit about AWS and think it may be a good platform to develop your project.
 
+## AWS
+
+## Technical Solution
+Rather than..
+
+**link to tutorials**
+
