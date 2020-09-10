@@ -25,7 +25,7 @@ You'd rather democratise this process so any one of your colleagues can run it w
 ## Proposed Solution
 You want to turn this process into an API, so anyone with internet access can pass an array of exam scores into a URL and be presented with a json with the statistical description. You've heard a bit about AWS and think it may be a good platform to develop your project.
 
-### A discussion of terms
+## A discussion of terms
 Before we go on, it may useful to briefly talk through some terms which we'll be using through this post.
 
 ### AWS
@@ -39,6 +39,8 @@ Application Programming Interfaces are standardised ways in which computational 
 
 ### Frontend
 A frontend is just a nice user interface, typically it has buttons and makes things look nicer for users who don't like their data served as an unformatted json.
+
+### Infrastructure-as-code
 
 ## AWS
 
