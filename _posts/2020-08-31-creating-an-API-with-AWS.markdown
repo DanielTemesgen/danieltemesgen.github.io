@@ -29,18 +29,19 @@ You want to turn this process into an API, so anyone with internet access can pa
 Before we go on, it may useful to briefly talk through some terms which we'll be using through this post.
 
 ### AWS
-  Amazon Web Services provides on-demand cloud computing services, imagine using a huge amount of computation power for an ETL job but only paying for the amount you used, or building a database and being billed on each query. It's a suite of computing products that one can use to build an IT infrastructure.
+Amazon Web Services provides on-demand cloud computing services, imagine using a huge amount of computation power for an ETL job but only paying for the amount you used, or building a database and being billed on each query. It's a suite of computing products that one can use to build an IT infrastructure.
   
 ### API
 Application Programming Interfaces are standardised ways in which computational process can talk to each other. An API defines how this conversation occurs, how errors are defined, what information can be requested and responded to. For the purpose of this post think of it as a handshake between two computers!
 
 ### Serverless
-Right, now this may be somewhat counterintuitive, calling something serverless is a lot like saying ordering a takeaway is _kitchenless_, clearly a kitchen was used to cook the food, you just didn't have to to manage or maintain it, it's been abstracted away. _Serverless_ applications simply abstract the maintainence of servers away from a developer so you don't need to worry about provisioning your own servers for a project. It has a few advantages, we only pay for what we use, I can safely assume my API isn't going to be used 24/7, so why pay for a server to be hosted for that time?
+Right, now this may be somewhat counterintuitive, calling something serverless is a lot like saying ordering a takeaway is _kitchenless_, clearly a kitchen was used to cook the food, you just didn't have to to manage or maintain it, it's been abstracted away. _Serverless_ applications simply abstract the maintainence of servers away so you don't need to provision your own servers for a project. It has a few advantages, we only pay for what we use, I can safely assume my API isn't going to be used 24/7, so why pay for a server to be hosted for that time?
 
 ### Frontend
 A frontend is just a nice user interface, typically it has buttons and makes things look nicer for users who don't like their data served as an unformatted json.
 
 ### Infrastructure-as-code
+As mentioned above, AWS gives us a myriad lot of tools to work with. But how can we possibly configure all of that, in a way which is repeatable and clearly defined? Infrastructure-as-code allows a developer to state the configuration and management of AWS tools as code. Much in the same way as you may store settings in a config file.
 
 ## AWS
 
