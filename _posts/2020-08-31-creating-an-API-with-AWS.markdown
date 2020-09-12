@@ -44,6 +44,8 @@ A frontend is just a nice user interface, typically it has buttons and makes thi
 As mentioned above, AWS gives us a myriad lot of tools to work with. But how can we possibly configure all of that, in a way which is repeatable and clearly defined? Infrastructure-as-code allows a developer to state the configuration and management of AWS tools as code. Much in the same way as you may store settings in a config file.
 
 ## AWS
+First of all, let's have a basic look at the code we're trying to turn into an API.
+
 
 
 ## Technical Solution
