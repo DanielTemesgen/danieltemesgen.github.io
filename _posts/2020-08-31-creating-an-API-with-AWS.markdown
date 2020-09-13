@@ -52,9 +52,14 @@ description = stats.describe(numbers)
 result = description._asdict()
 ```
 
+It's quite simple, we take a list of numbers (called `numbers`) and use the `scipy.stats.describe` method to conduct some basic summary statistics on the list.
+We then turn this into a dictionary called `result`.
 
 ## Technical Solution
 
+### Getting an AWS Account
+Our first step is to get an AWS account to deploy our solution to.
+If you're also a student, I'd recommend the AWS Educate account, it's free, you get AWS credits and (importantly!) you don't need to provide any credit card information.
 
 **link to tutorials**
 
