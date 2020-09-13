@@ -45,7 +45,12 @@ As mentioned above, AWS gives us a myriad lot of tools to work with. But how can
 
 ## AWS
 First of all, let's have a basic look at the code we're trying to turn into an API.
+```
+import scipy.stats as stats
 
+description = stats.describe(numbers)
+result = description._asdict()
+```
 
 
 ## Technical Solution
