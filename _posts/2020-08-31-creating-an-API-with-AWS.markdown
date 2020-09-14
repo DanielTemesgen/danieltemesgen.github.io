@@ -10,7 +10,6 @@ category: words
 
 This post will describe what an API is, how we can deploy it on AWS, what AWS is, as well as the code behind the infrastructure.
 
-
 Already have experience the above?
 Feel free to have a look at the [repo][repo-link].
 Have a look at the sample URL below for a look at how it works.
@@ -51,11 +50,15 @@ import scipy.stats as stats
 description = stats.describe(numbers)
 result = description._asdict()
 ```
-
 It's quite simple, we take a list of numbers (called `numbers`) and use the `scipy.stats.describe` method to conduct some basic summary statistics on the list.
 We then turn this into a dictionary called `result`.
 
 ## Technical Solution
+
+### Why an API?
+Before we dive into implementation it's worth taking a moment to ponder the benefits of this approach. 
+For starters, APIs don't care who you are, by that I mean, they are accessible from any system that is capable of making an HTTP request. Python? ✅ Terminal? ✅ Chrome? ✅ A smart fridge? ✅
+**Anything.**
 
 ### Getting an AWS Account
 Our first step is to get an AWS account to deploy our solution to.
