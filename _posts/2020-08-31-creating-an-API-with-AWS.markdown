@@ -58,6 +58,7 @@ We then turn this into a dictionary called `result`.
 ### Why an API?
 Before we dive into implementation it's worth taking a moment to ponder the benefits of this approach. 
 For starters, APIs don't care who you are, by that I mean, they are accessible from any system that is capable of making an HTTP request. Python? ✅ Terminal? ✅ Chrome? ✅ A smart fridge? ✅
+
 **Anything.**
 
 ### Getting an AWS Account
