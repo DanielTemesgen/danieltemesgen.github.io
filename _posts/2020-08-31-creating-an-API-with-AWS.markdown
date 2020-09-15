@@ -57,13 +57,14 @@ We then turn this into a dictionary called `result`.
 
 ### Why an API?
 Before we dive into implementation it's worth taking a moment to ponder the benefits of this approach. 
-For starters, APIs don't care who you are, by that I mean, they are accessible from any system that is capable of making an HTTP request. Python? ✅ Terminal? ✅ Chrome? ✅ A smart fridge? ✅
+For starters, APIs don't care who you are, by that I mean, they are accessible from any system that is capable of making an HTTP request. Python? ✅ Terminal? ✅ Chrome? ✅  Almost anything!
 
-**Anything.**
+It's also a quite controlled solution, an API allows for authentication, and endpoints mean that only the functionality you want to surface to your users is shared.
+If your backend service is a mansion, think of an API as allowing you to open only certain doors, and keep others closed.
 
 ### Getting an AWS Account
 Our first step is to get an AWS account to deploy our solution to.
 If you're also a student, I'd recommend the AWS Educate account, it's free, you get AWS credits and (importantly!) you don't need to provide any credit card information.
 
-**link to tutorials**
+
 
