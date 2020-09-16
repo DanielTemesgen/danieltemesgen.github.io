@@ -67,7 +67,7 @@ Our first step is to get an AWS account to deploy our solution to.
 If you're also a student, I'd recommend the [AWS Educate](https://aws.amazon.com/education/awseducate/) account, it's free, you get AWS credits and (importantly!) you don't need to provide any credit card information.
 
 ### Setting up an Example project
-The first thing we want to do is set up an example project up, a basic API which returns "Hello World". This will provide us with a good basis to iterate on. This [tutorial series](https://www.youtube.com/playlist?list=PLyb_C2HpOQSDlnrNJ_ERqTAkIe21xyRhi) up to Part 5 explains the basics of AWS and goes through an example deployment. The series will get you up until the point where you set the API up. 
+The first thing we want to do is set up an example project up, a basic API which returns "Hello World". This will provide us with a good basis to iterate on. This [tutorial series](https://www.youtube.com/playlist?list=PLyb_C2HpOQSDlnrNJ_ERqTAkIe21xyRhi) (up to Part 5) explains the basics of AWS and goes through an example deployment. The series will get you up until the point where you set the API up. 
 
 ### FastAPI
 It's at this point we diverge from the series and forge our own path! Rather than use Flask to set up our API we'll use a newer framework called [FastAPI](https://fastapi.tiangolo.com/). Unlike flask, this framework was designed explicitly to create APIs, and has a number of interesting features such automatically generated documentation which make it a great choice.
