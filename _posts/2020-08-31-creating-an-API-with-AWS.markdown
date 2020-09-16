@@ -14,7 +14,8 @@ Already have experience on the above?
 Feel free to have a look at the [repo][repo-link].
 Have a look at the sample URL below for a look at how it works.
 
-![https://img.shields.io/badge/GitHub-Repo-blue][repo-link]
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)][repo-link]
+
 `https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/stats/?numbers=5&numbers=6`
 
 There's a lot to unpack in this post so let's first describe the problem, then the solution in simple terms.
