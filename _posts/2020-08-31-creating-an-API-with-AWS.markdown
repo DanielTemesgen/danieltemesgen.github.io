@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating an API with AWS"
+title:  "Creating a Serverless API with AWS and FastAPI"
 date:   2020-08-31 11:37:00 +0100
 category: words
 ---
@@ -93,3 +93,9 @@ if __name__ == '__main__':
 
     uvicorn.run(app)
 ```
+
+The first four lines are simply importing packages we'll need to form the api. <br>
+First we assign a FastAPI instance to a variable called `app`.
+
+The next step is key, we declare a function called `read_root` (although the name isn't important). The function simply returns "Hello World" as a dicionary. Importantly we decorate that function with `@app.get("/simple")`, all that does is ensure that users must add `/simple` to their URL to return the output of the `read_root` function.
+
