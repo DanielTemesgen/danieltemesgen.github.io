@@ -10,7 +10,7 @@ category: words
 
 This post will describe what an API is, how we can deploy it on AWS, what AWS is, as well as the code behind the infrastructure.
 
-Already have experience the above?
+Already have experience on the above?
 Feel free to have a look at the [repo][repo-link].
 Have a look at the sample URL below for a look at how it works.
 `https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/stats/?numbers=5&numbers=6`
@@ -69,6 +69,12 @@ If you're also a student, I'd recommend the [AWS Educate](https://aws.amazon.com
 ### Setting up an Example project
 The first thing we want to do is set up an example project up, a basic API which returns "Hello World". This will provide us with a good basis to iterate on. This [tutorial series](https://www.youtube.com/playlist?list=PLyb_C2HpOQSDlnrNJ_ERqTAkIe21xyRhi) (up to Part 5) explains the basics of AWS and goes through an example deployment. The series will get you up until the point where you set the API up. 
 
+The tutorials goes through the following:
+*
+
+Don't forget to:
+* 
+
 ### FastAPI
 It's at this point we diverge from the series and forge our own path! Rather than use Flask to set up our API we'll use a newer framework called [FastAPI](https://fastapi.tiangolo.com/). Unlike flask, this framework was designed explicitly to create APIs, and has a number of interesting features such automatically generated documentation which make it a great choice.
 
@@ -95,7 +101,7 @@ if __name__ == '__main__':
 ```
 
 The first four lines are simply importing packages we'll need to form the api. <br>
-First we assign a FastAPI instance to a variable called `app`.
+First we assign a FastAPI instance to a variable called `app`, we've also set the `root_path="/prod"` to ensure all defined endpoints are within this URL.
 
 The next step is key, we declare a function called `read_root` (although the name isn't important). The function simply returns "Hello World" as a dicionary. Importantly we decorate that function with `@app.get("/simple")`, all that does is ensure that users must add `/simple` to their URL to return the output of the `read_root` function.
 
@@ -106,3 +112,9 @@ Now we can click through to [`https://7z8boxyi92.execute-api.us-east-1.amazonaws
 "Hello": "World"
 }
 ```
+Just as we defined!
+
+The following line is used to make FastAPI frameworks compatible with AWS Lambda environments.
+And the final part beginning with `if __name__ == '__main__':` ensures we can run our API locally as well as on AWS.
+
+### AWS Lambda Layers
