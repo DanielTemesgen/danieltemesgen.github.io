@@ -59,12 +59,15 @@ We then turn this into a dictionary called `result`.
 Before we dive into implementation it's worth taking a moment to ponder the benefits of this approach. 
 For starters, APIs don't care who you are, by that I mean, they are accessible from any system that is capable of making an HTTP request. Python? ✅ Terminal? ✅ Chrome? ✅  Almost anything!
 
-It's also a quite controlled solution, an API allows for authentication, and endpoints mean that only the functionality you want to surface to your users is shared.
-If your backend service is a mansion, think of an API as allowing you to open only certain doors, and keep others closed.
+It's also a quite controlled solution, an API allows for authentication, endpoints mean only functionality you want to surface to your users is shared.
+If we think of your backend as a mansion, an API allows you to only open certain doors, and keep others closed.
 
 ### Getting an AWS Account
 Our first step is to get an AWS account to deploy our solution to.
-If you're also a student, I'd recommend the AWS Educate account, it's free, you get AWS credits and (importantly!) you don't need to provide any credit card information.
+If you're also a student, I'd recommend the [AWS Educate](https://aws.amazon.com/education/awseducate/) account, it's free, you get AWS credits and (importantly!) you don't need to provide any credit card information.
 
+### Setting an Example project
+The first thing we want to do is set up an example project up, a basic API which returns "Hello World". This will provide us with a good basis to iterate on. This [tutorial series](https://www.youtube.com/playlist?list=PLyb_C2HpOQSDlnrNJ_ERqTAkIe21xyRhi) up to Part 5 explains the basics of AWS and goes through an example deployment. The series will get you up until the point where you set the API up. 
 
-
+### FastAPI
+It's at this point we diverge from the series and forge our own path! Rather than use Flask to set up our API we'll use a newer framework called [FastAPI](https://fastapi.tiangolo.com/).
