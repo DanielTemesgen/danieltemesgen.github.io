@@ -99,3 +99,10 @@ First we assign a FastAPI instance to a variable called `app`.
 
 The next step is key, we declare a function called `read_root` (although the name isn't important). The function simply returns "Hello World" as a dicionary. Importantly we decorate that function with `@app.get("/simple")`, all that does is ensure that users must add `/simple` to their URL to return the output of the `read_root` function.
 
+Now we can click through to [`https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/simple`](https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/simple), we should see the following:
+
+```
+{
+"Hello": "World"
+}
+```
