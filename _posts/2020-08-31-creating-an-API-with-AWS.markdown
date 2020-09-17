@@ -128,7 +128,7 @@ if __name__ == '__main__':
     uvicorn.run(app)
 ```
 
-The first four lines are simply importing packages we'll need to form the api. <br>
+The first four lines are simply importing packages we'll need to form the API. <br>
 First we assign a FastAPI instance to a variable called `app`, we've also set the `root_path="/prod"` to ensure all defined endpoints are within this URL.
 
 The next step is key, we declare a function called `read_root` (although the name isn't important). The function simply returns "Hello World" as a dictionary. Importantly we decorate that function with `@app.get("/simple")`, all that does is ensure that users must add `/simple` to their URL to return the output of the `read_root` function.
@@ -162,10 +162,11 @@ def stats_describe(numbers: List[float] = Query(
 
 FastAPI makes declaring an endpoint as simple as decorating a function. We see the the function accepts a list of numbers, in which each value should be a float.
 It returns a dictionary of the statistical description.
-Let's try this out.
+Let's try this out by sending in a simple list: `[5, 6]`.
 
 The following link:
 
+[test-api-link]
 [![GitHub Repo](https://img.shields.io/badge/API-Link-green)][test-api-link]
 
 
