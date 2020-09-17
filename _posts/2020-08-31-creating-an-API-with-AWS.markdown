@@ -7,12 +7,13 @@ category: words
 
 [simple-api-link]: https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/simple
 [test-api-link]: https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/stats/?numbers=5&numbers=6
+[docs-api-link]: https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/docs
 [repo-link]: https://github.com/DanielTemesgen/aws_statistical_calculator
 
 This post will describe what an API is, how we can deploy it on AWS, what AWS is, as well as the code behind the infrastructure.
 
 Already have experience on the above?
-Feel free to have a look at the repo and api example url below to see how it works.
+Feel free to have a look at the repo and API example url below to see how it works.
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)][repo-link]
 
@@ -189,3 +190,7 @@ We have our API!
 
 
 ### Documentation
+A big advantage of using the FastAPI framework is that a nicely rendered documentation page is automatically generated from our code.
+This is available at `/docs`, link below.
+
+[![GitHub Repo](https://img.shields.io/badge/API-Docs-purple)][docs-api-link]
