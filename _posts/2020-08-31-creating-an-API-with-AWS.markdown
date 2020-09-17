@@ -188,7 +188,7 @@ We have our API!
 
 
 ### Testing
-Testing is good! We should do it wherever we can, especially when developing something for wider consumption like an API!
+Testing is good! We should do it wherever we can, especially when developing something for wider consumption like an API.
 Sometimes it can be quite difficult to test an API. You might imagine it'd involve deploying and destroying an API served on localhost and querying it during the test run. This would be a lot of overhead. Luckily the FastAPI framework provides easy way to test using `TestClient` class shown in the code excerpt below.
 ```
 import pytest
