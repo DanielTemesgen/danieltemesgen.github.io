@@ -12,8 +12,8 @@ category: words
 
 This post will describe what an API is, how we can deploy it on AWS, what AWS is, as well as the code behind the infrastructure.
 
-Already have experience on the above?
-Feel free to have a look at the repo and API example url below to see how it works.
+Already have experience on the above? <br>
+Feel free to have a look at the repo and API URL below to see how it works.
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)][repo-link]
 
@@ -32,10 +32,10 @@ You want to turn this process into an API, so anyone with internet access can pa
 Before we go on, it may useful to briefly talk through some terms which we'll be using through this post.
 
 ### AWS
-Amazon Web Services provides on-demand cloud computing services, imagine using a huge amount of computation power for an ETL job but only paying for the amount you used, or building a database and being billed on each query. It's a suite of computing products that one can use to build an IT infrastructure.
+Amazon Web Services provides on-demand cloud computing services, imagine using a huge amount of computational power for an ETL job but only paying for the amount you used, or building a database and being billed on each query. It's a suite of computing products that one can use to build an IT infrastructure.
   
 ### API
-Application Programming Interfaces are standardised ways in which computational process can talk to each other. An API defines how this conversation occurs, how errors are defined, what information can be requested and responded to. For the purpose of this post think of it as a handshake between two computers!
+Application Programming Interfaces are standardised ways in which systems can talk to each other. An API defines how this conversation occurs, how errors are defined and what information can be requested and responded to. For the purpose of this post think of it as a handshake between two computers!
 
 ### Serverless
 Right, now this may be somewhat counterintuitive, calling something serverless is a lot like saying ordering a takeaway is _kitchenless_, clearly a kitchen was used to cook the food, you just didn't have to to manage or maintain it, it's been abstracted away. _Serverless_ applications simply abstract the maintainence of servers away so you don't need to provision your own servers for a project. It has a few advantages, we only pay for what we use, I can safely assume my API isn't going to be used 24/7, so why pay for a server to be hosted for that time?
@@ -82,7 +82,7 @@ The tutorial goes through the following:
 1. AWS CloudFormation
     * This is the infrastructure-as-code solution mentioned above.
 1. AWS SAM CLI
-    * This is a Commmand Line Interface (available to install via pip) for for building serverless applications.
+    * This is a Commmand Line Interface (available to install via pip) for building serverless applications.
 
 Don't forget to:
 * Provide your AWS credentials to the AWS SAM CLI.
@@ -98,13 +98,13 @@ Whilst this is explained in the repo, it's important so let's discuss it here.
 AWS Lambda layers are needed by serverless functions that have dependencies.
 In this case from the code below we see we rely on `FastAPI`, `mangum` and `scipy`.
 An AWS Lambda layer is a zipped directory of the source code for each package we rely on.
-This is referenced in `line 32` in `template.yaml`, without this layer we'd face an `ImportError` where by our serverless function would not be able to import the packages we rely on.
+This is referenced in `line 32` in `template.yaml`, without this layer we'd face an `ImportError` as our serverless function would not be able to import the packages we rely on.
 
 ### AWS SAM CLI
-The AWS SAM CLI is key, it's the way we deploy our severless function to AWS using our credentials, in my case from my AWS Educate account. Deploying is as simple as running `sam build` to run the build and check for errors and `sam deploy` to push this deployment to AWS. This infrastructure-as-code benefit means we don't have to worry about setting configuration by clicking through various pages manually, it's all declared in our `template.yaml` file.
+The AWS SAM CLI is key, it's the way we deploy our severless function to AWS using our credentials, in my case from my AWS Educate account. Deploying is as simple as running `sam build` to run the build and check for errors, and `sam deploy` to push this deployment to AWS. This infrastructure-as-code benefit means we don't have to worry about setting our configuration by clicking through various pages manually, it's all declared in our `template.yaml` file.
 
 ## FastAPI
-It's at this point we diverge from the series and forge our own path! Rather than use Flask to set up our API we'll use a newer framework called [FastAPI](https://fastapi.tiangolo.com/). Unlike flask, this framework was designed explicitly to create APIs, and has a number of interesting features such as automatically generated documentation which make it a great choice.
+It's at this point we diverge from the series and forge our own path! Rather than use Flask to set up our API we'll use a newer framework called [FastAPI](https://fastapi.tiangolo.com/). Unlike Flask, this framework was designed explicitly to create APIs, and has a number of interesting features such as automatically generated documentation which make it a great choice.
 
 Let's jump right into the main code.
 
@@ -131,7 +131,7 @@ if __name__ == '__main__':
 The first four lines are simply importing packages we'll need to form the api. <br>
 First we assign a FastAPI instance to a variable called `app`, we've also set the `root_path="/prod"` to ensure all defined endpoints are within this URL.
 
-The next step is key, we declare a function called `read_root` (although the name isn't important). The function simply returns "Hello World" as a dicionary. Importantly we decorate that function with `@app.get("/simple")`, all that does is ensure that users must add `/simple` to their URL to return the output of the `read_root` function.
+The next step is key, we declare a function called `read_root` (although the name isn't important). The function simply returns "Hello World" as a dictionary. Importantly we decorate that function with `@app.get("/simple")`, all that does is ensure that users must add `/simple` to their URL to return the output of the `read_root` function.
 
 Now we can click through to [![GitHub Repo](https://img.shields.io/badge/Simple_API-Link-orange)][simple-api-link], we should see the following:
 
