@@ -26,7 +26,7 @@ Let's say you work at Ofqual, every year you're sent an array of each cohort's e
 You'd rather democratise this process so any one of your colleagues can run it without need access to SQL server or knowledge of SQL.
 
 ## Proposed Solution
-You want to turn this process into an API, so anyone with internet access can pass an array of exam scores into a URL and be presented with a json with the statistical description. You've heard a bit about AWS and think it may be a good platform to develop your project.
+You want to turn this process into an API, so anyone with the internet can pass an array of exam scores into a URL and be presented the statistical description they need. You've heard a bit about AWS and think it may be a good platform to develop your project.
 
 ## A discussion of terms
 Before we go on, it may useful to briefly talk through some terms which we'll be using through this post.
@@ -61,7 +61,7 @@ We then turn this into a dictionary called `result`.
 
 ### Why an API?
 Before we dive into implementation it's worth taking a moment to ponder the benefits of this approach. 
-For starters, APIs don't care who you are, by that I mean, they are accessible from any system that is capable of making an HTTP request. Python? ✅ Terminal? ✅ Chrome? ✅  Almost anything!
+For starters, APIs don't care who you are, by that I mean, they are accessible from any system that is capable of making an HTTP request. Python? ✅ Terminal? ✅ Chrome? ✅   Almost anything!
 
 It's also a quite controlled solution, an API allows for authentication, endpoints mean only functionality you want to surface to your users is shared.
 If we think of your backend as a mansion, an API allows you to only open certain doors, and keep others closed. In this analogy, each door is an API "endpoint".
