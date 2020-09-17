@@ -187,10 +187,45 @@ We have our API!
 
 
 ### Testing
+Testing is good! We should do it wherever we can, especially when developing something for wider consumption like an API!
+Sometimes it can be quite difficult to test an API. You might imagine it'd involve deploying and destroying an API served on localhost and querying it during the test run. This would be a lot of overhead. Luckily the FastAPI framework provides easy way to test using `TestClient` class shown in the code excerpt below.
+```
+import pytest
+from api.main import app
+from fastapi.testclient import TestClient
 
+@pytest.fixture()
+def test_client():
+    return TestClient(app)
+
+def test_simple(test_client):
+    response = test_client.get("/simple")
+    assert response.status_code == 200
+    assert response.json() == {'Hello': 'World'}
+
+def test_stats(test_client):
+    response = test_client.get("/stats/?numbers=5&numbers=6")
+    expected = {'nobs': 2, 'mean': 5.5, 'minmax': [5, 6], 'skewness': 0.0, 'variance': 0.5, 'kurtosis': -2.0}
+    assert expected == response.json()
+```
+
+As we can see above, it's all fairly simple. We import the FastAPI instance we created in our code by typing `from api.main import app`. Then we create a pytest fixture which returns the `TestClient(app)`. Lastly, we create two tests which query this test API and ensure that the response matches our expectation with simple `assert` statements.
 
 ### Documentation
 A big advantage of using the FastAPI framework is that a nicely rendered documentation page is automatically generated from our code.
 This is available at `/docs`, link below.
 
 [![GitHub Repo](https://img.shields.io/badge/API-Docs-purple)][docs-api-link]
+
+## Roundup
+So that was a lot to take in, let's recap what we went through.
+1. Why you might use an API.
+1. What AWS is.
+1. An explanation of common terms relating to infrastructure.
+1. What AWS Lambda is.
+1. How to use the FastAPI framework to make APIs... fast!
+1. Some features of FastAPI like testing and documentation.
+
+Don't forget to look at the [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)][repo-link] for all the moving parts!
+
+Thanks for reading 👍🏾
