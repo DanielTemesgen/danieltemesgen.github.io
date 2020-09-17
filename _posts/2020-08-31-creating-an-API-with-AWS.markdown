@@ -12,13 +12,11 @@ category: words
 This post will describe what an API is, how we can deploy it on AWS, what AWS is, as well as the code behind the infrastructure.
 
 Already have experience on the above?
-Feel free to have a look at the [repo][repo-link].
-Have a look at the sample URL below for a look at how it works.
+Feel free to have a look at the repo and api example url below to see how it works.
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)][repo-link]
 
 [![GitHub Repo](https://img.shields.io/badge/API-Link-green)][test-api-link]
-
 
 There's a lot to unpack in this post so let's first describe the problem, then the solution in simple terms.
 
