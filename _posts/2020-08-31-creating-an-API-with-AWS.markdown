@@ -75,13 +75,13 @@ The first thing we want to do is set up an example project up, a basic API which
 The tutorial goes through the following:
 1. AWS
 1. Serverless in AWS
-  * An explanation of the AWS Lamba GUI.
+    * An explanation of the AWS Lamba GUI.
 1. AWS API Gateway
-  * Setting up REST API endpoints.
+    * Setting up REST API endpoints.
 1. AWS CloudFormation
-  * This is the infrastructure-as-code solution mentioned above.
+    * This is the infrastructure-as-code solution mentioned above.
 1. AWS SAM CLI
-  * This is a Commmand Line Interface (available to install via pip) for for building serverless applications.
+    * This is a Commmand Line Interface (available to install via pip) for for building serverless applications.
 
 Don't forget to:
 * Provide your AWS credentials to the AWS SAM CLI.
@@ -132,7 +132,7 @@ First we assign a FastAPI instance to a variable called `app`, we've also set th
 
 The next step is key, we declare a function called `read_root` (although the name isn't important). The function simply returns "Hello World" as a dicionary. Importantly we decorate that function with `@app.get("/simple")`, all that does is ensure that users must add `/simple` to their URL to return the output of the `read_root` function.
 
-Now we can click through to [simple-api-link], we should see the following:
+Now we can click through to [![GitHub Repo](https://img.shields.io/badge/Simple_API-Link-orange)][simple-api-link], we should see the following:
 
 ```
 {
@@ -165,7 +165,7 @@ Let's try this out.
 
 The following link:
 
-[test-api-link]
+[![GitHub Repo](https://img.shields.io/badge/API-Link-green)][test-api-link]
 
 
 Returns the following result.
