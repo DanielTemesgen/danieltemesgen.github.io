@@ -10,7 +10,7 @@ category: words
 [docs-api-link]: https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/docs
 [repo-link]: https://github.com/DanielTemesgen/aws_statistical_calculator
 
-This post will describe what an API is, how we can deploy it on AWS, what AWS is, as well as the code behind the infrastructure.
+This post will describe what AWS is, what an API is, how we can deploy it on AWS, as well as the code behind the infrastructure.
 
 Already have experience on the above? <br>
 Feel free to have a look at the repo and API URL below to see how it works.
@@ -166,7 +166,6 @@ Let's try this out by sending in a simple list: `[5, 6]`.
 
 The following link:
 
-[test-api-link]
 [![GitHub Repo](https://img.shields.io/badge/API-Link-green)][test-api-link]
 
 
