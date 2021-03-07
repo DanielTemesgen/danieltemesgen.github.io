@@ -15,7 +15,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Daniel Temesgen
-description: A data analyst interested in design, web development and programming for the visual arts.
+description: A Machine Learning Engineer interested in design, backend and web development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo: danieltemesgen.github.io # the GitHub repo name for your project
