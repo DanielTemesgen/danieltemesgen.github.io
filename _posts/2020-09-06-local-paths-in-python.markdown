@@ -9,7 +9,7 @@ category: words
 [os-path]: https://docs.python.org/3/library/os.path.html
 [as-posix]: https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.as_posix
 
-This post will describe the benefits of [`pathlib`](pathlib) over [`os.Path`](os-path).
+This brief post will describe the benefits of [`pathlib`](pathlib) over [`os.Path`](os-path).
 
 When using Python, we often need to interact with the filesystem, for instance to create, delete, read or write files, 
 or to check if files exist. 
@@ -33,7 +33,7 @@ In [2]: Path.cwd()
 Out[2]: PosixPath('/Users/Daniel/Desktop')
 ```
 
-Whilst these two approaches are both simple, we are introduced to a simple difference, the [`pathlib`](pathlib) approach returns a 
+Whilst these two approaches are both simple, we are introduced to a minor difference, the [`pathlib`](pathlib) approach returns a 
 `PosixPath` class due this being run in a Unix-like environment. This is a subtle but important distinction, which the 
 next example will bring out.
 
@@ -57,8 +57,7 @@ Using [`pathlib`](pathlib) means we can method-chain, so the code is a lot more 
 nested calls. Method-chaining also makes it easy to use your IDEs auto-complete to understand all the available 
 functionality.
 
-## Navigate the file tree
-
+## Navigating the file tree
 With `os`:
 ``` python
 In [1]: import os.path
@@ -107,3 +106,5 @@ If we need to ever convert paths to strings we can use the [`.as_posix()`](as-po
 In [1]: Path.cwd().joinpath('iris.csv').as_posix()
 Out[1]: '/Users/Daniel/Desktop/iris.csv'
 ```
+
+Overall, [`pathlib`](pathlib) use of the `Path` class feels a more intuitive way of working with the filesystem.
