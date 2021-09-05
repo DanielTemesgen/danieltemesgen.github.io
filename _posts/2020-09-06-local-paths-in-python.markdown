@@ -1,15 +1,19 @@
 ---
 layout: post
-title:  "Paths in Python: Local"
+title:  "Local Paths in Python"
 date:   2020-09-06 13:54:00 +0100
 category: words
 ---
 
-This post will describe the benefits of `pathlib` over `os.Path`.
+[pathlib]: https://docs.python.org/3/library/pathlib.html
+[os-path]: https://docs.python.org/3/library/os.path.html
+[as-posix]: https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.as_posix
+
+This post will describe the benefits of [`pathlib`](pathlib) over [`os.Path`](os-path).
 
 When using Python, we often need to interact with the filesystem, for instance to create, delete, read or write files, 
 or to check if files exist. 
-Since Python 3.4 the `pathlib` library introduced the `Path` class for this, which has some advantages over `os.Path`, 
+Since Python 3.4 the [`pathlib`](pathlib) library introduced the `Path` class for this, which has some advantages over `os.Path`, 
 which tends to return strings.
 
 ## Getting the cwd
@@ -22,14 +26,14 @@ In [2]: os.getcwd()
 Out[2]: '/Users/Daniel/Desktop
 ```
 
-Now, with `pathlib`: 
+Now, with [`pathlib`](pathlib): 
 ``` python
 In [1]: from pathlib import Path
 In [2]: Path.cwd()
 Out[2]: PosixPath('/Users/Daniel/Desktop')
 ```
 
-Whilst these two approaches are both simple, we are introduced to a simple difference, the `pathlib` approach returns a 
+Whilst these two approaches are both simple, we are introduced to a simple difference, the [`pathlib`](pathlib) approach returns a 
 `PosixPath` class due this being run in a Unix-like environment. This is a subtle but important distinction, which the 
 next example will bring out.
 
@@ -42,14 +46,14 @@ In [2]: os.path.exists(os.path.join(os.getcwd(), 'test.txt'))
 Out[2]: True
 ```
 
-Now, with `pathlib`: 
+Now, with [`pathlib`](pathlib): 
 ``` python
 In [1]: from pathlib import Path
 In [2]: Path.cwd().joinpath('test.txt').exists()
 Out[2]: True
 ```
 
-Using `pathlib` means we can method-chain, so the code is a lot more readable than the `os.path` equivalent which needs 
+Using [`pathlib`](pathlib) means we can method-chain, so the code is a lot more readable than the `os.path` equivalent which needs 
 nested calls. Method-chaining also makes it easy to use your IDEs auto-complete to understand all the available 
 functionality.
 
@@ -62,14 +66,14 @@ In [2]: os.path.dirname(os.path.dirname(os.getcwd()))
 Out[2]: '/Users'
 ```
 
-Now, with `pathlib`: 
+Now, with [`pathlib`](pathlib): 
 ``` python
 In [1]: from pathlib import Path
 In [2]: Path.cwd().parents[1]
 Out[2]: PosixPath('/Users')
 ```
 
-In this case `pathlib` avoids nested function calls and method-chaining entirely. Instead we access all the possible 
+In this case [`pathlib`](pathlib) avoids nested function calls and method-chaining entirely. Instead we access all the possible 
 parents of the path with the `.parents` attribute and obtain the appropriate parent.
 
 ``` python
@@ -78,7 +82,7 @@ Out[1]: [PosixPath('/Users/Daniel'), PosixPath('/Users'), PosixPath('/')]
 ```
 
 ## Example Use
-`pathlib` classes work with pandas for reading and writing:
+[`pathlib`](pathlib) classes work with pandas for reading and writing:
 ``` python
 In [1]: iris_df = pd.read_csv(Path.cwd().joinpath('iris.csv'))
 In [2]: iris_df.to_csv(Path.cwd().joinpath('iris2.csv'))
@@ -98,7 +102,7 @@ Out[1]: '"sepal.length","sepal.width","petal.length","petal.width","variety"\n5.
 
 ```
 
-If we need to ever convert paths to strings we can use the `.as_posix()` attribute.
+If we need to ever convert paths to strings we can use the [`.as_posix()`](as-posix) attribute.
 ``` python
 In [1]: Path.cwd().joinpath('iris.csv').as_posix()
 Out[1]: '/Users/Daniel/Desktop/iris.csv'
