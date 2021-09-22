@@ -13,11 +13,11 @@ This brief post will describe the benefits of [`pathlib`](pathlib) over [`os.Pat
 
 When using Python, we often need to interact with the filesystem, for instance to create, delete, read or write files, 
 or to check if files exist. 
-Since Python 3.4 the [`pathlib`](pathlib) library introduced the `Path` class for this, which has some advantages over `os.Path`, 
-which tends to return strings.
+Since Python 3.4 the [`pathlib`](pathlib) library introduced the `Path` class for this, which has some advantages over 
+`os.Path`, which tends to return strings.
 
 ## Getting the cwd
-Let's first familiarise ourselves with the syntax with a simple call to get the current working directory. 
+Let's first familiarise ourselves with the syntax, with a simple call to get the current working directory. 
 
 With `os`:
 ``` python
@@ -33,9 +33,9 @@ In [2]: Path.cwd()
 Out[2]: PosixPath('/Users/Daniel/Desktop')
 ```
 
-Whilst these two approaches are both simple, we are introduced to a minor difference, the [`pathlib`](pathlib) approach returns a 
-`PosixPath` class due this being run in a Unix-like environment. This is a subtle but important distinction, which the 
-next example will bring out.
+Whilst these two approaches are both simple, we are introduced to a minor difference, the [`pathlib`](pathlib) approach 
+returns a `PosixPath` class due this being run in a Unix-like environment. This is a subtle but important distinction, 
+which the next example will bring out.
 
 
 ## Check if file exists
@@ -53,9 +53,9 @@ In [2]: Path.cwd().joinpath('test.txt').exists()
 Out[2]: True
 ```
 
-Using [`pathlib`](pathlib) means we can method-chain, so the code is a lot more readable than the `os.path` equivalent which needs 
-nested calls. Method-chaining also makes it easy to use your IDEs auto-complete to understand all the available 
-functionality.
+Using [`pathlib`](pathlib) means we can method-chain, so the code is a lot more readable than the `os.path` equivalent 
+which needs nested calls. Method-chaining also makes it easy to use your IDEs auto-complete to understand all the 
+available functionality.
 
 ## Navigating the file tree
 With `os`:
@@ -72,8 +72,8 @@ In [2]: Path.cwd().parents[1]
 Out[2]: PosixPath('/Users')
 ```
 
-In this case [`pathlib`](pathlib) avoids nested function calls and method-chaining entirely. Instead we access all the possible 
-parents of the path with the `.parents` attribute and obtain the appropriate parent.
+In this case [`pathlib`](pathlib) avoids nested function calls and method-chaining entirely. Instead, we access all the 
+possible parents of the path with the `.parents` attribute and obtain the appropriate parent.
 
 ``` python
 In [1]: list(Path.cwd().parents)
