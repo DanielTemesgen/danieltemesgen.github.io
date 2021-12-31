@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Remote Paths in Python"
-date:   2020-09-19 13:54:00 +0100
+date:   2021-09-19 13:54:00 +0100
 category: words
 ---
 [local]: (2020-09-06-local-paths-in-python.markdown)
