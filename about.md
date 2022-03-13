@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm Daniel Temesgen, a Machine Learning Engineer and Computer Science MSc student. Interested in Data Visualisation, creative coding and deploying apps to the cloud.
+I'm Daniel Temesgen, a Software Engineer and Computer Science MSc student. Interested in Data Visualisation, creative coding and deploying apps to the cloud.
 See my [github](https://github.com/danieltemesgen) for more info.
 
 ### Technical Details

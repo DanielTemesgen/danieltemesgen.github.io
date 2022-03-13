@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Remote Paths in Python"
-date:   2020-09-19 13:54:00 +0100
+date:   2021-09-19 13:54:00 +0100
 category: words
 ---
 [local]: (2020-09-06-local-paths-in-python.markdown)
@@ -29,8 +29,8 @@ Let's create a test bucket to work with. We'll do this by logging into the Minio
  
  ![create-bucket](/../assets/images/minio-create-bucket.png)
  
-## Getting Started w/ [`cloudpathlib`](cloudpathlib)
-To install the package use the following command, the `[s3]` means we'll also install the dependencies required to works
+## Getting Started
+To install the package use the following command, the `[s3]` means we'll also install the dependencies required to work
  with s3-like systems. 
 
 ```bash
@@ -39,7 +39,7 @@ pip install cloudpathlib[s3]
 
 [`cloudpathlib`](cloudpathlib) has a fairly intuitive interface. We define an `S3Client` with the `endpoint_url` and 
 credentials needed to access our Minio instance. The next line sets this client to be the default global client for all 
-subsequent filesystem operations, we can of course have a more fine-grained approach and have different clients for 
+subsequent filesystem operations, but we can of course have a more fine-grained approach and have different clients for 
 different operations. The final line defines a `CloudPath` linked to the previously created `test` bucket.
  ```python
 from cloudpathlib import S3Client, CloudPath
@@ -51,7 +51,7 @@ client.set_as_default_client()
 test_bucket = CloudPath('s3://test')
 ```
 
-## Simple Operations w/ [`cloudpathlib`](cloudpathlib)
+## Simple Operations
 Now we'll join this bucket to `test.txt`, this path doesn't yet exist, we can check this with the `.exists()` method.
 ```python
 test_path = test_bucket.joinpath('test.txt')
