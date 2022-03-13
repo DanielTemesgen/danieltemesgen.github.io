@@ -7,7 +7,7 @@ category: words
 
 [repo-link]: https://github.com/DanielTemesgen/python-workshops
 
-[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/Geospatial/Geospatial_Basics.ipynb
+[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/geospatial/geospatial-basics.ipynb
 
 ![plot-preview](/../assets/images/geospatial-basics-plot-example.png)
 
@@ -29,7 +29,7 @@ To see and run the code in an executable environment, click below.
 
 [![Binder](https://mybinder.org/badge_logo.svg)][binder-link]
 
-To quickly view the code in read-only mode, click [here](https://nbviewer.jupyter.org/github/DanielTemesgen/python-workshops/blob/c5d52515cd3f0acaf169a894994b46b46b43e518/Geospatial/Geospatial_Basics.ipynb).
+To quickly view the code in read-only mode, click [here](https://nbviewer.jupyter.org/github/DanielTemesgen/python-workshops/blob/c5d52515cd3f0acaf169a894994b46b46b43e518/geospatial/geospatial-basics.ipynb).
 
 ![code-preview](/../assets/images/geospatial-basics-preview.png)
 

@@ -7,9 +7,9 @@ category: words
 
 [repo-link]: https://github.com/DanielTemesgen/python-workshops
 
-[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/Decorators_Dataclasses_IDEs/Decorators_Dataclasses_IDEs.ipynb
+[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/decorators-dataclasses-ides/decorators-dataclasses-ides.ipynb
 
-[slides-link]: https://danieltemesgen.github.io/python-workshops/Decorators_Dataclasses_IDEs/#/
+[slides-link]: https://danieltemesgen.github.io/python-workshops/decorators-dataclasses-ides/#/
 
 I've added to the python workshops repo with a guide on Python Decorators, the advantages of Dataclasses, and the benefits of using an IDE [Here][repo-link].
 

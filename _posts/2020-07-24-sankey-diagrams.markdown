@@ -7,7 +7,7 @@ category: words
 
 [repo-link]: https://github.com/DanielTemesgen/python-workshops
 
-[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/Visualisation/Sankey_Diagram.ipynb
+[binder-link]: https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/visualisation/sankey-diagram.ipynb
 
 ![plot-preview](/../assets/images/sankey_diagram.png)
 
@@ -21,4 +21,4 @@ To see and run the code in an executable environment, click below.
 
 [![Binder](https://mybinder.org/badge_logo.svg)][binder-link]
 
-To quickly view the code in read-only mode, click [here](https://nbviewer.jupyter.org/github/DanielTemesgen/python-workshops/blob/master/Visualisation/Sankey_Diagram.ipynb).
+To quickly view the code in read-only mode, click [here](https://nbviewer.jupyter.org/github/DanielTemesgen/python-workshops/blob/master/visualisation/sankey-diagram.ipynb).

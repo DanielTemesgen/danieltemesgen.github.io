@@ -93,8 +93,8 @@ Now we'll setup a Python environment using the `setup-python` Action.
 
 Now we have Python, I'll explain the lines which occur in the `run` step:
 * Let's use pip to install a virtual environment using the `requirements.txt` file in the repo.
-* Then we'll go into the `Decorators_Dataclasses_IDEs` folder, which is the place with the notebook file we wish to convert.
-* Then we use the `jupyter nbconvert` command to convert the notebook to `.html` slides. This converts `Decorators_Dataclasses_IDEs.ipynb` to `Decorators_Dataclasses_IDEs.html`
+* Then we'll go into the `decorators-dataclasses-ides` folder, which is the place with the notebook file we wish to convert.
+* Then we use the `jupyter nbconvert` command to convert the notebook to `.html` slides. This converts `decorators-dataclasses-ides.ipynb` to `decorators-dataclasses-ides.html`
 * In order to have these `.html` slides picked up by Github Pages it needs to be called `index.html`
 * So the last line changes the name to `index.html` using the `mv` option, the `-f` overwrites any existing `index.html` which may exist.
 
@@ -103,9 +103,9 @@ Now we have Python, I'll explain the lines which occur in the `run` step:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-        cd Decorators_Dataclasses_IDEs/
-        jupyter nbconvert Decorators_Dataclasses_IDEs.ipynb --to slides --SlidesExporter.reveal_scroll=True
-        mv Decorators_Dataclasses_IDEs.slides.html index.html -f
+        cd decorators-dataclasses-ides/
+        jupyter nbconvert decorators-dataclasses-ides.ipynb --to slides --SlidesExporter.reveal_scroll=True
+        mv decorators-dataclasses-ides.slides.html index.html -f
 ```
 
 ### Commit changes
