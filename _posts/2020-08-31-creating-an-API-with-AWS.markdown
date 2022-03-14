@@ -8,7 +8,7 @@ category: words
 [simple-api-link]: https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/simple
 [test-api-link]: https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/stats/?numbers=5&numbers=6
 [docs-api-link]: https://7z8boxyi92.execute-api.us-east-1.amazonaws.com/prod/docs
-[repo-link]: https://github.com/DanielTemesgen/aws_statistical_calculator
+[repo-link]: https://github.com/DanielTemesgen/aws-statistical-calculator
 
 This post will describe what AWS is, what an API is, how we can deploy it on AWS, as well as the code behind the infrastructure.
 
